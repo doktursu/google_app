@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GoogleApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<div style="display:inline-block">
+  <h3><img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Google_wordmark.gif" style="height:100px"><b>google</b></h3>
+
+  <form action="/search" method="get">
+    <input type="text" name="option">
+    <button>Google Search</button>
+  </form>
+
+  <a href="/adwords">I'm feeling lucky</a>
+</div>
+
+
+<%= yield %>
+
+
+
+</body>
+</html>

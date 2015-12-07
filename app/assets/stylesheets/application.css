@@ -1,0 +1,85 @@
+body {
+  width: 2850px;
+}
+
+a:hover {
+  color: red;
+}
+
+iframe {
+  position: fixed;
+  z-index: -1;
+  top:0;
+  left:0;
+}
+
+.drone {
+  width: 200px;
+  position: fixed;
+  left: -20px;
+  bottom: 200px;
+  animation: nudge 5s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite alternate;
+}
+
+.drone2 {
+  width: 200px;
+  position: fixed;
+  left: 50px;
+  bottom: 400px;
+  animation: nudge 7s cubic-bezier(0.5, 0.2, 0.3, 1.0) infinite alternate;
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(600px, 0px);
+  }
+
+  20% {
+    transform: translate(0px, 220px);
+  }
+  
+  50% {
+    transform: translate(850px, 180px);
+  }
+
+  55% {
+    transform: translate(750px, -30px);
+  }
+
+  60% {
+    transform: translate(5px, -160px);
+  }
+
+  70% {
+    transform: translate(300px, -200px);
+  }
+  
+  77% {
+    transform: translate(-50px, -100px);
+  }
+}
+
+/* The element to apply the animation to */
+/*div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}*/
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */

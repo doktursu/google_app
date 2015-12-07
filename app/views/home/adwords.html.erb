@@ -1,0 +1,19 @@
+
+<% adwords = ['actual google', 'alphabet', 'drones'] %>
+<% 199.times do %>
+  <div style="display:inline-block">
+    <h3><img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Google_wordmark.gif" style="height:100px"><b>google</b></h3>
+
+    <form action="/search" method="get">
+      <input type="text" name="option" value="<%= adwords[rand(3)]%>">
+      <button>Google Search</button>
+    </form>
+    <a href="/adwords">I'm feeling lucky</a>
+  </div>
+<% end %>
+
+<ul>
+  <li>"actual google"</li>
+  <li>"alphabet"</li>
+  <li>"drones"</li>
+</ul>
