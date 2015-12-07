@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get '/welcome', to: 'home#welcome'
+  get '/a_warm_welcome', to: 'home#a_warm_welcome'
   get '/search', to: 'home#search'
   get '/adwords', to: 'home#adwords'
 
@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get '/drones', to: 'services#drones'
   get '/alphabet', to: 'services#alphabet'
 
-  root to: 'home#welcome'
+  root to: 'home#a_warm_welcome'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

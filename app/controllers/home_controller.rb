@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  def welcome
+  def a_warm_welcome
     render 'menu'
   end
 
@@ -8,7 +8,7 @@ class HomeController < ApplicationController
       when 'actual google' then redirect_to '/google'
       when 'drones' then redirect_to '/drones'
       when 'alphabet' then redirect_to '/alphabet'
-      else redirect_to '/welcome'
+      else redirect_to '/a_warm_welcome'
       end
   end
 

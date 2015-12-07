@@ -3,7 +3,15 @@ body {
 }
 
 a:hover {
-  color: red;
+  color: #f00;
+}
+
+a.chinese-google:hover {
+  text-shadow: 2px 2px #000;
+}
+
+a.chinese-google:active {
+  color: #fff;
 }
 
 iframe {
@@ -11,6 +19,15 @@ iframe {
   z-index: -1;
   top:0;
   left:0;
+}
+
+.chinese-google:hover,
+.chinese-google:active {
+  background: red url(http://4.bp.blogspot.com/-1eDtnSUn9cI/UFU9ICX4MGI/AAAAAAAAAWY/vD1Ot0I9Iyk/s1600/China--flag-pictures.gif) no-repeat center;
+}
+
+img.flag:hover {
+  background: red url(http://www.enchantedlearning.com/asia/china/flag.GIF) no-repeat center;
 }
 
 .drone {
